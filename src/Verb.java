@@ -11,13 +11,13 @@ public class Verb
 	private String فWithHarakhMaadi;
 	private String عWithHarakhMaadi;
 	private String لWithHarakhMaadi;
-	private String فWithHarakhMudaari;
-	private String عWithHarakhMudaari;
-	private String لWithHarakhMudaari;
+	//private String فWithHarakhMudaari;
+	//private String عWithHarakhMudaari;
+	//private String لWithHarakhMudaari;
 	private String definition;
-	private String verb;
-	private String maadiBase;
-	private String mudaariBase;
+	//private String verb;
+	//private String maadiBase;
+	//private String mudaariBase;
 	
 	public Verb(Baab baab, char فPosition, char عPosition, char لPoistion,
 			String definition) 
@@ -47,16 +47,22 @@ public class Verb
 	
 	public String maadiBase()
 	{
-		ArrayList<Character> maadiHarakat = baab.getMaadiHarakat();
+		ArrayList<String> maadiAffixes = baab.getMaadiAffixes();
 		String  maddiBase = "";
-		for(int i=0; i<letters.size(); i++)
+		int i =0;
+		if(!baab.isHarakah(maadiAffixes.get(0).charAt(0))){
+			maddiBase = maadiAffixes.get(0);
+			i++;
+		}
+		for(; i<letters.size(); i++)
 		{
 //			System.out.println(letters.get(i));
 //			System.out.println(maadiHarakat.get(i));
 //			System.out.println("---");
 			maddiBase += letters.get(i);
-			maddiBase += maadiHarakat.get(i);
+			maddiBase += maadiAffixes.get(i);
 		}
+		
 //		System.out.println("end word");
 		return maddiBase;
 	}
@@ -64,11 +70,16 @@ public class Verb
 	public String mudaariBase()
 	{
 		String mudaariBase = "";
-		ArrayList<Character> mudaariHarakat = baab.getMudaariHarakat();
-		for(int i=0; i<letters.size(); i++)
+		ArrayList<String> mudaariAffixes = baab.getMudaariAffixes();
+		int i =0;
+		if(!baab.isHarakah(mudaariAffixes.get(0).charAt(0))){
+			mudaariBase = mudaariAffixes.get(0);
+			i++;
+		}
+		for(; i<letters.size(); i++)
 		{
 			mudaariBase += letters.get(i);
-			mudaariBase += mudaariHarakat.get(i);
+			mudaariBase += mudaariAffixes.get(i);
 		}
 //		System.out.println(mudaariBase);
 		return mudaariBase;
