@@ -13,73 +13,73 @@ public class Mudaari extends Table
 		{
 		case 1:
 		{
-			conjugated = "يَ" + mudaariBase;
+			conjugated = "ي" + mudaariBase;
 			break;
 		}
 		case 2:
 		{
-			conjugated = "يَ" + fathaEnding + "انِ";
+			conjugated = "ي" + fathaEnding + "انِ";
 			break;
 		}
 		case 3:
 		{
-			conjugated = "يَ" + mudaariBase + "وْنَ"  ;
+			conjugated = "ي" + mudaariBase + "وْنَ"  ;
 			break;
 		}
 		case 4:
 		{
-			conjugated = "تَ" + mudaariBase;
+			conjugated = "ت" + mudaariBase;
 			break;
 		}
 		case 5:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 6:
 		{
-			conjugated = "يَ" + sukoonEnding + "نَ";
+			conjugated = "ي" + sukoonEnding + "نَ";
 			break;
 		}
 		case 7:
 		{
-			conjugated ="تَ" + mudaariBase;
+			conjugated ="ت" + mudaariBase;
 			break;
 		}
 		case 8:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 9:
 		{
-			conjugated = "تَ" + mudaariBase + "وْنَ";
+			conjugated = "ت" + mudaariBase + "وْنَ";
 			break;
 		}
 		case 10:
 		{
 			String temp = shortMudaariBase + "ِ";
-			conjugated = "تَ" + temp + "يِنَ";
+			conjugated = "ت" + temp + "يِنَ";
 			break;
 		}
 		case 11:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 12:
 		{
-			conjugated = "تَ" + sukoonEnding + "نَ";
+			conjugated = "ت" + sukoonEnding + "نَ";
 			break;
 		}
 		case 13:
 		{
-			conjugated = "أَ" + mudaariBase;
+			conjugated = "أ" + mudaariBase;
 			break;
 		}
 		case 14:
 		{
-			conjugated = "نَ" + mudaariBase;
+			conjugated = "ن" + mudaariBase;
 			break;
 		}
 		
@@ -98,73 +98,73 @@ public class Mudaari extends Table
 		{
 		case 1:
 		{
-			conjugated = "يَ" + mudaariBase;
+			conjugated = "ي" + mudaariBase;
 			break;
 		}
 		case 2:
 		{
-			conjugated = "يَ" + fathaEnding + "انِ";
+			conjugated = "ي" + fathaEnding + "انِ";
 			break;
 		}
 		case 3:
 		{
-			conjugated = "يَ" + mudaariBase + "وْنَ"  ;
+			conjugated = "ي" + mudaariBase + "وْنَ"  ;
 			break;
 		}
 		case 4:
 		{
-			conjugated = "تَ" + mudaariBase;
+			conjugated = "ت" + mudaariBase;
 			break;
 		}
 		case 5:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 6:
 		{
-			conjugated = "يَ" + sukoonEnding + "نَ";
+			conjugated = "ي" + sukoonEnding + "نَ";
 			break;
 		}
 		case 7:
 		{
-			conjugated ="تَ" + mudaariBase;
+			conjugated ="ت" + mudaariBase;
 			break;
 		}
 		case 8:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 9:
 		{
-			conjugated = "تَ" + mudaariBase + "وْنَ";
+			conjugated = "ت" + mudaariBase + "وْنَ";
 			break;
 		}
 		case 10:
 		{
 			String temp = shortMudaariBase + "ِ";
-			conjugated = "تَ" + temp + "يِنَ";
+			conjugated = "ت" + temp + "يِنَ";
 			break;
 		}
 		case 11:
 		{
-			conjugated = "تَ" + fathaEnding + "انِ";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 12:
 		{
-			conjugated = "تَ" + sukoonEnding + "نَ";
+			conjugated = "ت" + sukoonEnding + "نَ";
 			break;
 		}
 		case 13:
 		{
-			conjugated = "أَ" + mudaariBase;
+			conjugated = "أ" + mudaariBase;
 			break;
 		}
 		case 14:
 		{
-			conjugated = "نَ" + mudaariBase;
+			conjugated = "ن" + mudaariBase;
 			break;
 		}
 		

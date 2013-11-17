@@ -48,19 +48,19 @@ public class Verb
 	public String maadiBase()
 	{
 		ArrayList<String> maadiAffixes = baab.getMaadiAffixes();
-		String  maddiBase = "";
-		int i =0;
-		if(!baab.isHarakah(maadiAffixes.get(0).charAt(0))){
-			maddiBase = maadiAffixes.get(0);
-			i++;
-		}
-		for(; i<letters.size(); i++)
+		String  maddiBase = maadiAffixes.get(0);
+		int i =1;
+		
+		for(int j = 0; j<letters.size(); j++)
 		{
 //			System.out.println(letters.get(i));
 //			System.out.println(maadiHarakat.get(i));
 //			System.out.println("---");
-			maddiBase += letters.get(i);
-			maddiBase += maadiAffixes.get(i);
+			maddiBase += letters.get(j);
+			if(i <= maadiAffixes.size()){
+				maddiBase += maadiAffixes.get(i);
+			}
+			i++;
 		}
 		
 //		System.out.println("end word");
@@ -71,17 +71,21 @@ public class Verb
 	{
 		String mudaariBase = "";
 		ArrayList<String> mudaariAffixes = baab.getMudaariAffixes();
-		int i =0;
-		if(!baab.isHarakah(mudaariAffixes.get(0).charAt(0))){
-			mudaariBase = mudaariAffixes.get(0);
+		for(String s: mudaariAffixes){
+			System.out.println(s);
+		}
+		
+		mudaariBase = mudaariAffixes.get(0);
+		int i =1;
+		
+		for(int j = 0; j<letters.size(); j++)
+		{
+			mudaariBase += letters.get(j);
+			mudaariBase += mudaariAffixes.get(i);
 			i++;
 		}
-		for(; i<letters.size(); i++)
-		{
-			mudaariBase += letters.get(i);
-			mudaariBase += mudaariAffixes.get(i);
-		}
-//		System.out.println(mudaariBase);
+		
+		mudaariBase = mudaariBase.substring(1);
 		return mudaariBase;
 	}
 	public void addToBaab()

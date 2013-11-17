@@ -7,6 +7,7 @@ public class Baab
 	private String maadi;
 	private String mudaari;
 	
+	private boolean isMazeed = false;
 //	private String prefix;
 //	private String infix1;
 //	private String infix2;
@@ -36,7 +37,9 @@ public class Baab
 		lettersOfName = name.toCharArray();
 		maadi = name.split(" ")[1];
 		mudaari = name.split(" ")[2];
-		
+		if(name.split(" ").length >3){
+			isMazeed = true;
+		}
 		mudaariAffixes = new ArrayList(Arrays.asList(mudaari.split("[فعل]")));
 		maadiAffixes = new ArrayList(Arrays.asList(maadi.split("[فعل]")));
 		

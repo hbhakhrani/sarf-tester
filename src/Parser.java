@@ -123,7 +123,7 @@ public class Parser
 //			System.out.println("Char at " + i + "is " + baabName.charAt(i) + "  *   ");
 //		}
 //		System.out.println();
-		crntBaab = new Baab(baabName, crntBaabNumber);
+		crntBaab = new Baab(baabName);
 		crntBaabNumber++;
 //		System.out.println(crntBaabNumber-1 + " " + crntBaab.getName());
 		allBaabs.add(crntBaab);
