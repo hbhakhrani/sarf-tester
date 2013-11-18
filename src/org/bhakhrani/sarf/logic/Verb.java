@@ -48,35 +48,37 @@ public class Verb
 	
 	public String maadiBase()
 	{
-		ArrayList<String> maadiAffixes = baab.getMaadiAffixes();
-		String  maddiBase = maadiAffixes.get(0);
-		int i =1;
-		
-		for(int j = 0; j<letters.size(); j++)
-		{
-//			System.out.println(letters.get(i));
-//			System.out.println(maadiHarakat.get(i));
-//			System.out.println("---");
-			maddiBase += letters.get(j);
-			if(i <= maadiAffixes.size()){
-				maddiBase += maadiAffixes.get(i);
-			}
-			i++;
-		}
-		System.out.println(maadiMajhoolBase()); //Test for maadi majhool
-//		System.out.println("end word");
-		return maddiBase;
+//		ArrayList<String> maadiAffixes = baab.getMaadiAffixes();
+//		String  maddiBase = maadiAffixes.get(0);
+//		int i =1;
+//		
+//		for(int j = 0; j<letters.size(); j++)
+//		{
+////			System.out.println(letters.get(i));
+////			System.out.println(maadiHarakat.get(i));
+////			System.out.println("---");
+//			maddiBase += letters.get(j);
+//			if(i <= maadiAffixes.size()){
+//				maddiBase += maadiAffixes.get(i);
+//			}
+//			i++;
+//		}
+//		System.out.println(maadiMajhoolBase()); //Test for maadi majhool
+////		System.out.println("end word");
+//		return maddiBase;
+		return maadiBase(false);
 	}
 	
-	public String maadiMajhoolBase(){
+	public String maadiBase(boolean isMajhool){
 		ArrayList<String> maadiAffixes = baab.getMaadiAffixes();
+		int j=0;
+	if(isMajhool){
 		for(int i =0; i< maadiAffixes.size()-2; i++){
 			maadiAffixes.set(i, maadiAffixes.get(i).replace('َ','ُ'));
 			maadiAffixes.set(i, maadiAffixes.get(i).replace('ِ','ُ'));
 		}
 		maadiAffixes.set(2, maadiAffixes.get(2).replace('ُ', 'ِ'));
 		maadiAffixes.set(2, maadiAffixes.get(2).replace('َ', 'ِ'));
-		int j=0;
 		for(int i=1; i<maadiAffixes.size()-1; i++){
 			//maadiAffixes.get(i).replace('ا','و');
 			for(char c: maadiAffixes.get(i).toCharArray()){
@@ -89,7 +91,8 @@ public class Verb
 			}
 			j=0;
 		}
-		String  majhoolBase = maadiAffixes.get(0);
+	}
+		String  maadiBase = maadiAffixes.get(0);
 		j =1;
 		
 		for(int i = 0; i<letters.size(); i++)
@@ -97,20 +100,26 @@ public class Verb
 //			System.out.println(letters.get(i));
 //			System.out.println(maadiHarakat.get(i));
 //			System.out.println("---");
-			majhoolBase += letters.get(i);
+			maadiBase += letters.get(i);
 			if(j <= maadiAffixes.size()){
-				majhoolBase += maadiAffixes.get(j);
+				maadiBase += maadiAffixes.get(j);
 			}
 			j++;
 		}
-		return majhoolBase;
+		return maadiBase;
 	}
-	public String mudaariBase()
+	public String mudaariBase(){
+		return mudaariBase(false);
+	}
+	public String mudaariBase(boolean isMajhool)
 	{
 		String mudaariBase = "";
 		ArrayList<String> mudaariAffixes = baab.getMudaariAffixes();
-		for(String s: mudaariAffixes){
-			System.out.println(s);
+		if(isMajhool){
+			String tmp = mudaariAffixes.get(0).substring(0, 1) + 'ُ'
+				+ mudaariAffixes.get(0).substring(2);
+			mudaariAffixes.set(0, tmp);
+			mudaariAffixes.set(2, mudaariAffixes.get(2).replace('ِ', 'َ'));
 		}
 		
 		mudaariBase = mudaariAffixes.get(0);
@@ -126,6 +135,7 @@ public class Verb
 		mudaariBase = mudaariBase.substring(1);
 		return mudaariBase;
 	}
+	
 	public void addToBaab()
 	{
 		baab.addWord(this);
