@@ -54,7 +54,7 @@ public class Details
 		}
 		case 2:
 		{
-			pluarilty = "تثني";
+			pluarilty = "تثنية";
 			break;
 		}
 		case 3:
@@ -69,7 +69,7 @@ public class Details
 		}
 		case 5:
 		{
-			pluarilty = "تثني";
+			pluarilty = "تثنية";
 			break;
 		}
 		case 6:
@@ -84,7 +84,7 @@ public class Details
 		}
 		case 8:
 		{
-			pluarilty = "تثني";
+			pluarilty = "تثنية";
 			break;
 		}
 		case 9:
@@ -99,7 +99,7 @@ public class Details
 		}
 		case 11:
 		{
-			pluarilty = "تثني";
+			pluarilty = "تثنية";
 			break;
 		}
 		case 12:
@@ -143,17 +143,17 @@ public class Details
 		}
 		case 4:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}
 		case 5:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}
 		case 6:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}		
 		case 7:
@@ -173,17 +173,17 @@ public class Details
 		}
 		case 10:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}
 		case 11:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}
 		case 12:
 		{
-			gender = "مأنث";
+			gender = "مؤنث";
 			break;
 		}		
 		case 13:
@@ -206,32 +206,32 @@ public class Details
 		{
 		case 1:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}
 		case 2:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}
 		case 3:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}
 		case 4:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}
 		case 5:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}
 		case 6:
 		{
-			person = "غاإب";
+			person = "غائب";
 			break;
 		}		
 		case 7:
