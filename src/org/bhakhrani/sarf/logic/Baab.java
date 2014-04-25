@@ -38,11 +38,15 @@ public class Baab
 		lettersOfName = name.toCharArray();
 		maadi = name.split(" ")[1];
 		mudaari = name.split(" ")[2];
-		if(name.split(" ").length >3){
-			isMazeed = true;
-		}
+		
 		mudaariAffixes = new ArrayList(Arrays.asList(mudaari.split("[فعل]")));
 		maadiAffixes = new ArrayList(Arrays.asList(maadi.split("[فعل]")));
+		
+		for(int i = 0; i< maadiAffixes.size(); i++){
+			if(maadiAffixes.get(i).length() >1){
+				isMazeed = true;
+			}
+		}
 		
 			
 //			int numRootsPassed = 0;

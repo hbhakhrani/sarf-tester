@@ -42,7 +42,7 @@ public class FlashCardGUI extends javax.swing.JFrame {
 		}
 		else
 		{
-			String fileName = "verb_List_Formatted.txt";
+			String fileName = "verb_List_Formatted_mazeed.txt";
 			ArrayList<Table> tables = new ArrayList<Table>();
 			Table maadi = new Maadi();
 			Table mudaari = new Mudaari();
