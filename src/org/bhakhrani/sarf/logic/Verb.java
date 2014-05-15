@@ -66,7 +66,7 @@ public class Verb
 //		System.out.println(maadiMajhoolBase()); //Test for maadi majhool
 ////		System.out.println("end word");
 //		return maddiBase;
-		return maadiBase(true);
+		return maadiBase(false);
 	}
 	
 	public String maadiBase(boolean isMajhool){
@@ -109,7 +109,7 @@ public class Verb
 		return maadiBase;
 	}
 	public String mudaariBase(){
-		return mudaariBase(true);
+		return mudaariBase(false);
 	}
 	public String mudaariBase(boolean isMajhool)
 	{

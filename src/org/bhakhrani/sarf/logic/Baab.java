@@ -42,7 +42,8 @@ public class Baab
 		mudaariAffixes = new ArrayList(Arrays.asList(mudaari.split("[فعل]")));
 		maadiAffixes = new ArrayList(Arrays.asList(maadi.split("[فعل]")));
 		
-		for(int i = 0; i< maadiAffixes.size(); i++){
+		int maadAffSize = maadiAffixes.size();
+		for(int i = 0; i< maadAffSize; i++){
 			if(maadiAffixes.get(i).length() >1){
 				isMazeed = true;
 			}
