@@ -1,7 +1,4 @@
-package org.bhakhrani.sarf.logic.tables;
-
-import org.bhakhrani.sarf.logic.Table;
-import org.bhakhrani.sarf.logic.Verb;
+package org.bhakhrani.sarf.logic;
 
 public class Maadi extends Table
 {

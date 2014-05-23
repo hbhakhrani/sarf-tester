@@ -4,10 +4,6 @@ Baab
 
 رغب - to encourage
 ذكر - to remind
-بدل - to change
-بذر - to waste, be extravagant
-بشر - to bring good news
-
 ------------------
 
 Baab
@@ -15,10 +11,6 @@ Baab
 
 تبع - to follow
 خلط - to mix
-برك - to bless
-بعد - to cause a separation
-جدل - to debate
-
 ------------------
 
 Baab
@@ -26,11 +18,6 @@ Baab
 
 كرم - to honor
 خرج - to remove
-بدل - to replace
-برم - to confirm
-بصر - to observe
-بطل - to nullify
-بعد - to remove, drive away
 ------------------
 
 Baab

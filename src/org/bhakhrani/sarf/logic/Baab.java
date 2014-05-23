@@ -40,15 +40,14 @@ public class Baab
 		mudaari = name.split(" ")[2];
 		
 		mudaariAffixes = new ArrayList(Arrays.asList(mudaari.split("[فعل]")));
-		mudaariAffixes.remove(mudaariAffixes.size()-1);
 		maadiAffixes = new ArrayList(Arrays.asList(maadi.split("[فعل]")));
 		
-//		int maadAffSize = maadiAffixes.size();
-//		for(int i = 0; i< maadAffSize; i++){
-//			if(maadiAffixes.get(i).length() >1){
-//				isMazeed = true;
-//			}
-//		}
+		int maadAffSize = maadiAffixes.size();
+		for(int i = 0; i< maadAffSize; i++){
+			if(maadiAffixes.get(i).length() >1){
+				isMazeed = true;
+			}
+		}
 		
 			
 //			int numRootsPassed = 0;

@@ -4,8 +4,6 @@ import java.util.Random;
 import java.util.Timer;
 import javax.swing.JTextArea;
 
-import org.bhakhrani.sarf.logic.tables.Maadi;
-import org.bhakhrani.sarf.logic.tables.Mudaari;
 import org.bhakhrani.sarf.view.SarfGUI;
 import org.bhakhrani.sarf.view.Wait;
 

@@ -1,8 +1,6 @@
 package org.bhakhrani.sarf.logic;
 import java.util.ArrayList;
 
-import org.bhakhrani.sarf.logic.tables.Mudaari;
-
 
 public class Verb 
 {

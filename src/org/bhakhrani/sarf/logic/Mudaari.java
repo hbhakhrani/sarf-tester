@@ -1,12 +1,8 @@
-package org.bhakhrani.sarf.logic.tables;
-
-import org.bhakhrani.sarf.logic.Table;
-import org.bhakhrani.sarf.logic.Verb;
+package org.bhakhrani.sarf.logic;
 
 public class Mudaari extends Table
 {
 	private String name = "مضارع";
-	//private String 
 	public static String conjugate(int number, Verb verb)
 	{
 		String mudaariBase = verb.mudaariBase();

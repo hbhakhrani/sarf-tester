@@ -5,11 +5,11 @@ import java.util.Random;
 
 import org.bhakhrani.sarf.logic.Baab;
 import org.bhakhrani.sarf.logic.Details;
+import org.bhakhrani.sarf.logic.Maadi;
+import org.bhakhrani.sarf.logic.Mudaari;
 import org.bhakhrani.sarf.logic.Parser;
 import org.bhakhrani.sarf.logic.Table;
 import org.bhakhrani.sarf.logic.Verb;
-import org.bhakhrani.sarf.logic.tables.Maadi;
-import org.bhakhrani.sarf.logic.tables.Mudaari;
 
 
 public class FlashCardQuiz 
@@ -45,7 +45,8 @@ public class FlashCardQuiz
 		case 1: return detailsTester(); 
 		case 4: return verbToDef(); 
 		case 5: return defToVerb();
-		case 6: 
+		case 6: return detailsToNasb();
+		case 7: 
 			{
 				int randQuizNum = quizPicker.nextInt(5);
 				return selectQuiz(randQuizNum);
@@ -135,7 +136,33 @@ public class FlashCardQuiz
 //		printToGUIln(Details.details(conjNumber));
 	}
 	
-	
+	public FlashCard detailsToNasb(){
+		//list root letters, definition, baab, maadi, majhool, wahid, mudhakkar, ghaaib
+				int conjNum = conjGenerator.nextInt(14)+1;
+				int verbNum = verbPicker.nextInt(allVerbs.size());
+				int tableNum = 2;//tablePicker.nextInt(2);
+				Table table = allTables.get(tableNum);
+				Verb verb = allVerbs.get(verbNum);
+				String verbDef = verb.getDefinition();
+				Baab verbBaab = verb.getBaab();
+				String randDetails = Details.details(conjNum);
+				String conjVerb = table.conj(conjNum, verb);
+				String tableName = table.toString();
+				String majhool = "مجهول";
+				String maroof = "معروف";
+				String instructions = "Given the root letters and the details, say the conjugated Verb";
+				String question = (verb.toString()) + "\n";
+//				System.out.println(verb.toString());
+//				Wait.manySec(3);
+				question += (tableName + " --- " + maroof);
+//				System.out.println(majhool);
+				question += "\n" + (randDetails.toString());
+				//countDown(seconds);
+//				printToGUIln(conjVerb);
+				String answer = conjVerb;
+				FlashCard card = new FlashCard(question, answer, instructions);
+				return card;
+	}
 	public FlashCard detailsToConj()
 	{
 		//list root letters, definition, baab, maadi, majhool, wahid, mudhakkar, ghaaib
