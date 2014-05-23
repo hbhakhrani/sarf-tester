@@ -4,11 +4,10 @@ import java.awt.Toolkit;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-import org.bhakhrani.sarf.logic.Maadi;
-import org.bhakhrani.sarf.logic.Mudaari;
-import org.bhakhrani.sarf.logic.MudaariNasb;
 import org.bhakhrani.sarf.logic.ParseTester;
 import org.bhakhrani.sarf.logic.Table;
+import org.bhakhrani.sarf.logic.tables.Maadi;
+import org.bhakhrani.sarf.logic.tables.Mudaari;
 
 /*
  * To change this template, choose Tools | Templates
@@ -36,10 +35,10 @@ public class FlashCardGUI extends javax.swing.JFrame {
 			ArrayList<Table> tables = new ArrayList<Table>();
 			Table maadi = new Maadi();
 			Table mudaari = new Mudaari();
-			Table nasb = new MudaariNasb();
+		
 			tables.add(maadi);
 			tables.add(mudaari);
-			tables.add(nasb);
+		
 			quiz = new FlashCardQuiz(fileName, tables);
 			initComponents();
 		}
@@ -49,10 +48,10 @@ public class FlashCardGUI extends javax.swing.JFrame {
 			ArrayList<Table> tables = new ArrayList<Table>();
 			Table maadi = new Maadi();
 			Table mudaari = new Mudaari();
-			Table nasb = new MudaariNasb();
+
 			tables.add(maadi);
 			tables.add(mudaari);
-			tables.add(nasb);
+
 			quiz = new FlashCardQuiz(fileName, tables);
 			initComponents();
 			testParse();
@@ -220,7 +219,7 @@ public class FlashCardGUI extends javax.swing.JFrame {
         startButton.setBounds(190, 60, 73, 23);
         startArea.add(startButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        quizSelector.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Details to Conjugation", "Conjugations to Details", "Maadi to Mudaari", "Mudaari to Maadi", "Verb to Definition", "Definition to Verb", "Details to Mudaari Mansoob", "Random"
+        quizSelector.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Details to Conjugation", "Conjugations to Details", "Maadi to Mudaari", "Mudaari to Maadi", "Verb to Definition", "Definition to Verb", "Random"
         }));
         quizSelector.setSelectedIndex(0);
         quizSelector.setBounds(10, 60, 150, 20);

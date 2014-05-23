@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 import javax.swing.JTextArea;
 
+import org.bhakhrani.sarf.logic.tables.Maadi;
+import org.bhakhrani.sarf.logic.tables.Mudaari;
 import org.bhakhrani.sarf.view.SarfGUI;
 import org.bhakhrani.sarf.view.Wait;
 

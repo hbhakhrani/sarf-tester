@@ -1,8 +1,12 @@
-package org.bhakhrani.sarf.logic;
+package org.bhakhrani.sarf.logic.tables;
 
-public class MudaariNasb extends Table
+import org.bhakhrani.sarf.logic.Table;
+import org.bhakhrani.sarf.logic.Verb;
+
+public class Mudaari extends Table
 {
-	private String name = "مضارع منصوب بلن";
+	private String name = "مضارع";
+	//private String 
 	public static String conjugate(int number, Verb verb)
 	{
 		String mudaariBase = verb.mudaariBase();
@@ -14,73 +18,73 @@ public class MudaariNasb extends Table
 		{
 		case 1:
 		{
-			conjugated = "لن ي" + fathaEnding;
+			conjugated = "ي" + mudaariBase;
 			break;
 		}
 		case 2:
 		{
-			conjugated = "لن ي" + fathaEnding + "ا";
+			conjugated = "ي" + fathaEnding + "انِ";
 			break;
 		}
 		case 3:
 		{
-			conjugated = "لن ي" + mudaariBase + "وْ"  ;
+			conjugated = "ي" + mudaariBase + "وْنَ"  ;
 			break;
 		}
 		case 4:
 		{
-			conjugated = "لن ت" + fathaEnding;
+			conjugated = "ت" + mudaariBase;
 			break;
 		}
 		case 5:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 6:
 		{
-			conjugated = "لن ي" + sukoonEnding + "نَ";
+			conjugated = "ي" + sukoonEnding + "نَ";
 			break;
 		}
 		case 7:
 		{
-			conjugated ="لن ت" + fathaEnding;
+			conjugated ="ت" + mudaariBase;
 			break;
 		}
 		case 8:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 9:
 		{
-			conjugated = "لن ت" + mudaariBase + "وْ";
+			conjugated = "ت" + mudaariBase + "وْنَ";
 			break;
 		}
 		case 10:
 		{
 			String temp = shortMudaariBase + "ِ";
-			conjugated = "لن ت" + temp + "يِ";
+			conjugated = "ت" + temp + "يِنَ";
 			break;
 		}
 		case 11:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 12:
 		{
-			conjugated = "لن ت" + sukoonEnding + "نَ";
+			conjugated = "ت" + sukoonEnding + "نَ";
 			break;
 		}
 		case 13:
 		{
-			conjugated = "لن أ" + fathaEnding;
+			conjugated = "أ" + mudaariBase;
 			break;
 		}
 		case 14:
 		{
-			conjugated = "لن ن" + fathaEnding;
+			conjugated = "ن" + mudaariBase;
 			break;
 		}
 		
@@ -99,75 +103,76 @@ public class MudaariNasb extends Table
 		{
 		case 1:
 		{
-			conjugated = "لن ي" + fathaEnding;
+			conjugated = "ي" + mudaariBase;
 			break;
 		}
 		case 2:
 		{
-			conjugated = "لن ي" + fathaEnding + "ا";
+			conjugated = "ي" + fathaEnding + "انِ";
 			break;
 		}
 		case 3:
 		{
-			conjugated = "لن ي" + mudaariBase + "وْ"  ;
+			conjugated = "ي" + mudaariBase + "وْنَ"  ;
 			break;
 		}
 		case 4:
 		{
-			conjugated = "لن ت" + fathaEnding;
+			conjugated = "ت" + mudaariBase;
 			break;
 		}
 		case 5:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 6:
 		{
-			conjugated = "لن ي" + sukoonEnding + "نَ";
+			conjugated = "ي" + sukoonEnding + "نَ";
 			break;
 		}
 		case 7:
 		{
-			conjugated ="لن ت" + fathaEnding;
+			conjugated ="ت" + mudaariBase;
 			break;
 		}
 		case 8:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 9:
 		{
-			conjugated = "لن ت" + mudaariBase + "وْ";
+			conjugated = "ت" + mudaariBase + "وْنَ";
 			break;
 		}
 		case 10:
 		{
 			String temp = shortMudaariBase + "ِ";
-			conjugated = "لن ت" + temp + "يِ";
+			conjugated = "ت" + temp + "يِنَ";
 			break;
 		}
 		case 11:
 		{
-			conjugated = "لن ت" + fathaEnding + "ا";
+			conjugated = "ت" + fathaEnding + "انِ";
 			break;
 		}
 		case 12:
 		{
-			conjugated = "لن ت" + sukoonEnding + "نَ";
+			conjugated = "ت" + sukoonEnding + "نَ";
 			break;
 		}
 		case 13:
 		{
-			conjugated = "لن أ" + fathaEnding;
+			conjugated = "أ" + mudaariBase;
 			break;
 		}
 		case 14:
 		{
-			conjugated = "لن ن" + fathaEnding;
+			conjugated = "ن" + mudaariBase;
 			break;
 		}
+		
 		}
 		
 		return conjugated;

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import javax.swing.JTextArea;
 
-import org.bhakhrani.sarf.logic.Maadi;
-import org.bhakhrani.sarf.logic.Mudaari;
 import org.bhakhrani.sarf.logic.Quiz;
 import org.bhakhrani.sarf.logic.Table;
+import org.bhakhrani.sarf.logic.tables.Maadi;
+import org.bhakhrani.sarf.logic.tables.Mudaari;
 
 /*
  * To change this template, choose Tools | Templates
